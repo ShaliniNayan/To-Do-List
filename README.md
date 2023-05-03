@@ -37,6 +37,11 @@
 - Webpack
 
 ### Key Features <a name="key-features"></a>
+- Webpack
+- JavaScript Arrays
+- HTML & CSS
+- DOM Manupulation
+
 
 <!-- LIVE DEMO -->
 
