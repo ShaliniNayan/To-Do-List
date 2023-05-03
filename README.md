@@ -1,60 +1,133 @@
 # To-Do-List
-# To-Do List
+# To-Do-List
 
-This is a simple starter project for building web applications using Webpack. It includes configuration files for development and production builds, as well as basic file structure for a typical To-Do List app.
+<!-- TABLE OF CONTENTS -->
 
-## Getting Started
+# 📗 Table of Contents
 
-To get started with this project, clone the repository to your local machine and install the required dependencies:
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-```sh
- git clone
- cd webapp-starter
- npm install
+<!-- PROJECT DESCRIPTION -->
 
-```
+# 📖 [To-Do-List] <a name="about-project"></a>
 
-## Usage
+**[]** Is a simple project To-Do-List app.
 
-To start a development server, run the following command:
+## 🛠 Built With <a name="built-with"></a>
 
-Run Dev Server (Port 8080)
+- HTML.
+- CSS.
+- JS
+- Webpack
 
-```sh
-  npm start
-```
+### Key Features <a name="key-features"></a>
 
-This will start a local server at http://localhost:8080 and will automatically reload the page whenever you make changes to your code.
 
-## Production
 
-To create a production build, run the following command:
+<!-- LIVE DEMO -->
 
-```sh
-  npm run build
-```
+## 🚀 Live Demo <a name="live-demo"></a>
 
-This will create a production-ready build of your application in the dist folder.
+- [Live Demo Link](https://shalininayan.github.io/To-Do-List/)
 
-## Configuration
+<!-- GETTING STARTED -->
 
-This starter project uses Webpack to bundle and optimize your code. The configuration file webpack.config.js includes the following:
+## 💻 Getting Started <a name="getting-started"></a>
 
-- mode: Set to 'development' or 'production' depending on whether you are building for development or production.
-- entry: The entry point for your application. Change this to the path of your main JavaScript file.
-- devServer: Configuration for the development server, including the location of your static files.
-- plugins: Additional plugins to use with Webpack, such as the HtmlWebpackPlugin which generates an HTML file to serve your bundled JavaScript.
-- output: Configuration for where Webpack should output your bundled JavaScript file.
-- module: Configuration for how Webpack should handle different types of files. In this case, it includes a rule for handling CSS files using the css-loader and style-loader.
+To get a local copy up and running, follow these steps.
 
-## src directory
+### Prerequisites
 
-The source directory contains:
+In order to run this project you need:
 
-- index.html (main HTML)
-- index.css (main styles)
-- index.js (main JavaScript)
+- vscode.
+- git.
+- Knowledge on HTML and CSS.
+- Knowledge og JS
+- Knowledge of Webpack
 
-## License
+### Setup
 
-This project is [MIT](./LICENSE) licensed.
+Clone this repository to your desired folder:
+
+Navigate to the directory where you want to clone this project with your terminal.
+Clone this repository using the following commands:
+
+`git clone  https://github.com/ShaliniNayan/To-Do-List.git`
+
+### Install
+
+Install this project with this command in your terminal:
+`cd To-Do-List`
+
+### Usage
+
+To run the project, execute the following command in your terminal:
+`code .`
+
+### Run tests
+
+To run tests,
+
+Run it in your local server.
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Shalini Nayan**
+
+- GitHub: [@ShaliniNayan](https://github.com/ShaliniNayan)
+- Twitter: [@sndprs](https://twitter.com/sndprs)
+- LinkedIn: [shalini-nayan-5820389](https://linkedin.com/in/shalini-nayan-5820389)
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- Creating and linking consequent pages namely:
+  - List
+  - Add
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+- Contributions, issues, and feature requests are welcome!
+
+- Feel free to check send me a message using the social media accounts stated above .
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+- If you like this project, give it a star .
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- would also like to thank microverse for issuing this project to the students.
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+- This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
