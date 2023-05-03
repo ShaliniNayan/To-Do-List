@@ -1,7 +1,7 @@
 # To-Do-List
-# webpack-project
+# To-Do List
 
-This is a simple starter project for building web applications using Webpack. It includes configuration files for development and production builds, as well as basic file structure for a typical web app.
+This is a simple starter project for building web applications using Webpack. It includes configuration files for development and production builds, as well as basic file structure for a typical To-Do List app.
 
 ## Getting Started
 
