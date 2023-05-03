@@ -1,4 +1,5 @@
 # To-Do-List
+
 # To-Do-List
 
 <!-- TABLE OF CONTENTS -->
@@ -37,13 +38,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-
-
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://shalininayan.github.io/To-Do-List/)
+- [Live Demo Link](https://shalininayan.github.io/To-Do-List/) -->
 
 <!-- GETTING STARTED -->
 
@@ -60,6 +59,8 @@ In order to run this project you need:
 - Knowledge on HTML and CSS.
 - Knowledge og JS
 - Knowledge of Webpack
+- npm install
+- npm start
 
 ### Setup
 
@@ -68,7 +69,12 @@ Clone this repository to your desired folder:
 Navigate to the directory where you want to clone this project with your terminal.
 Clone this repository using the following commands:
 
+```sh
+cd my-folder
+
 `git clone  https://github.com/ShaliniNayan/To-Do-List.git`
+ npm install
+```
 
 ### Install
 
