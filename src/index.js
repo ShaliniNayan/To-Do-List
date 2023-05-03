@@ -2,7 +2,7 @@ const todoList = document.getElementById('todo-list');
 const inputTask = document.getElementById('input-task');
 const addBtn = document.getElementById('add-btn');
 
-let tasks = [];
+const tasks = [];
 
 function displayTasks() {
   todoList.innerHTML = '';
