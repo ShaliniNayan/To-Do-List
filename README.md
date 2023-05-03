@@ -9,7 +9,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Key Features](#key-features)
-  <!-- - [🚀 Live Demo](#live-demo) -->
+    <!-- - [🚀 Live Demo](#live-demo) -->
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -59,8 +59,6 @@ In order to run this project you need:
 - Knowledge on HTML and CSS.
 - Knowledge og JS
 - Knowledge of Webpack
-- npm install
-- npm start
 
 ### Setup
 
@@ -74,6 +72,7 @@ cd my-folder
 
 `git clone  https://github.com/ShaliniNayan/To-Do-List.git`
  npm install
+ npm start
 ```
 
 ### Install
