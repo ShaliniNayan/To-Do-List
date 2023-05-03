@@ -1,41 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/a11f8b435e.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <h2>Today's To-Do</h2>
-    </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+</head>
+<body>
     <main>
-      <ul id="todo-list"></ul>
-      <input type="text" id="input-task" placeholder="Add task..." /><i
-        class="fa-sharp fa-solid fa-arrows-rotate"
-      ></i>
-
-      <br /><br />
-      <input type="checkbox" id="myCheck" value="todo" />
-      <label for="todo-list">
-        wash the dishes
-        <img src="/src/icon/verticle-menu.png" alt="menu" />
-      </label>
-      <br />
-      <input type="checkbox" id="myCheck" value="todo" />
-      <label for="todo-list">
-        complete To Do list project
-        <img src="/src/icon/return-icon.png" alt="return" /> </label
-      ><br /><br />
-      <button type="button" class="clear-btn" id="clear-btn">
-        Clear all completed
-      </button>
+      <header>
+        <h1>Today's To Do</h1>
+        <button type="button" class="fas fa-sync-alt refresh-icon"></button>
+      </header>
+      <input type="text" name="todo-input" id="todo-input" class="todo-input" placeholder="Add to your list...">
+      <ul class="todo-list" id="todo-list">
+      </ul>
+      <button type="button" class="clear-btn">Clear all completed</button>
     </main>
-    <script src="index.js"></script>
-  </body>
+    <script src="https://kit.fontawesome.com/2bc8a8d57a.js" crossorigin="anonymous"></script>
+</body>
 </html>
