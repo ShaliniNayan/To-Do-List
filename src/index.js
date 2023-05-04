@@ -15,28 +15,10 @@ let id;
 // Get Item from Local Storage
 const data = localStorage.getItem('TODO');
 
-// Check if data is not empty
-if (data) {
-  LIST = JSON.parse(data);
-  id = LIST.length; // Set the id to the last one in the list
-  loadList(LIST); // load the list to the user interface
-} else {
-  // if data isn't empty
-  LIST = [];
-  id = 0;
-}
-
-// load the items to user's interface
-function loadList(array) {
-  array.forEach((item) => {
-    addToDo(item.name, item.id, item.done, item.trash);
-  });
-}
-
 // clear the local storage
 clear.addEventListener('click', () => {
   localStorage.clear();
-  location.reload();
+  window.location.reload();
 });
 
 // Function Add To-Do
@@ -60,8 +42,26 @@ function addToDo(toDo, id, done, trash) {
   list.insertAdjacentHTML(position, item);
 }
 
+// load the items to user's interface
+function loadList(listArray) {
+  listArray.forEach((item) => {
+    addToDo(item.name, item.id, item.done, item.trash);
+  });
+}
+
+// Check if data is not empty
+if (data) {
+  LIST = JSON.parse(data);
+  id = LIST.length; // Set the id to the last one in the list
+  loadList(LIST); // load the list to the user interface
+} else {
+  // if data isn't empty
+  LIST = [];
+  id = 0;
+}
+
 // Add an item to the list user the enter key
-document.addEventListener('keyup', (even) => {
+document.addEventListener('keyup', (event) => {
   if (event.keyCode === 13) {
     const toDo = input.value;
 
@@ -78,14 +78,14 @@ document.addEventListener('keyup', (even) => {
       // Add item to Local Storage(this code must be added where the LIST array is updated )
       localStorage.setItem('TODO', JSON.stringify(LIST));
 
-      id + 1;
+      id += 1;
     }
     input.value = '';
   }
 });
 
 // Complete to do
-function completeTODo(element) {
+function completeToDo(element) {
   element.classList.toggle(CHECK);
   element.classList.toggle(UNCHECK);
   element.parentNode.querySelector('.text').classList.toggle(LINE_THROUGH);
@@ -107,7 +107,7 @@ list.addEventListener('click', (event) => {
   const elementJob = element.attributes.job.value; // complete or delete
 
   if (elementJob === 'complete') {
-    completeTODo(element);
+    completeToDo(element);
   } else if (elementJob === 'remove') {
     removeToDo(element);
   }
