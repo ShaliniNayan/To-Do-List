@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-</head>
-<body>
-    <main>
-      <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Titillium+Web"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
         <h1>Today's To Do</h1>
-        <button type="button" class="fas fa-sync-alt refresh-icon"></button>
-      </header>
-      <input type="text" name="todo-input" id="todo-input" class="todo-input" placeholder="Add to your list...">
-      <ul class="todo-list" id="todo-list">
-      </ul>
+        <div class="clear">
+          <i class="fa fa-refresh"></i>
+        </div>
+        <div class="add-to-do">
+          <i class="fa fa-plus-circle"></i>
+          <input type="text" id="input" placeholder="Add to your list..." />
+        </div>
+      </div>
+      <div class="content">
+        <ul id="list">
+          <!-- <li class="item">
+                    <<i class="fa fa-circle-thin co" job="complete" id="0"></i>
+                    <p class="text">Drink Coffee</p>
+                    <i class="fa fa-circle-trash-o de" job="remove" id="0"></i> 
+                </li> -->
+        </ul>
+      </div>
       <button type="button" class="clear-btn">Clear all completed</button>
-    </main>
-    <script src="https://kit.fontawesome.com/2bc8a8d57a.js" crossorigin="anonymous"></script>
-</body>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
