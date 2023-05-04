@@ -9,8 +9,8 @@ const UNCHECK = 'fa-circle-thin';
 const LINE_THROUGH = 'lineThrough';
 
 // Variables
-let LIST; let
-  id;
+let LIST;
+let id;
 
 // Get Item from Local Storage
 const data = localStorage.getItem('TODO');
@@ -78,7 +78,7 @@ document.addEventListener('keyup', (even) => {
       // Add item to Local Storage(this code must be added where the LIST array is updated )
       localStorage.setItem('TODO', JSON.stringify(LIST));
 
-      id++;
+      id + 1;
     }
     input.value = '';
   }
