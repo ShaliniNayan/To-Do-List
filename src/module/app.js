@@ -16,7 +16,7 @@ clear.addEventListener('click', () => {
   window.location.reload();
 });
 
-function addToDo(toDo, id, done, trash) {
+function addToDo(name, index, done, trash) {
   if (trash) {
     return;
   }
@@ -25,9 +25,9 @@ function addToDo(toDo, id, done, trash) {
   const LINE = done ? LINE_THROUGH : '';
 
   const item = `<li class = 'item'>
-                    <i class="fa ${DONE} co" job="complete" id="${id}"></i>
-                    <p class="text ${LINE}">${toDo}</p>
-                    <i class="fa fa-trash-o de" job="remove" id="${id}"></i> 
+                    <i class="fa ${DONE} co" job="complete" id="${index}"></i>
+                    <p class="text ${LINE}">${name}</p>
+                    <i class="fa fa-trash-o de" job="remove" id="${index}"></i> 
                 </li>                
                 `;
 
@@ -38,7 +38,7 @@ function addToDo(toDo, id, done, trash) {
 
 function loadList(listArray) {
   listArray.forEach((item) => {
-    addToDo(item.name, item.id, item.done, item.trash);
+    addToDo(item.name, item.index, item.done, item.trash);
   });
 }
 
@@ -48,7 +48,7 @@ if (data) {
   loadList(LIST);
 } else {
   LIST = [];
-  id = 0;
+  id = 1;
 }
 
 document.addEventListener('keyup', (event) => {
@@ -59,7 +59,8 @@ document.addEventListener('keyup', (event) => {
       addToDo(toDo, id, false, false);
 
       LIST.push({
-        name: toDo ? id : id,
+        name: toDo,
+        index: id,
         done: false,
         trash: false,
       });
@@ -77,13 +78,13 @@ function completeToDo(element) {
   element.classList.toggle(UNCHECK);
   element.parentNode.querySelector('.text').classList.toggle(LINE_THROUGH);
 
-  LIST[element.id].done = !LIST[element.id].done;
+  LIST[element.id - 1].done = !LIST[element.id - 1].done;
 }
 
 function removeToDo(element) {
   element.parentNode.parentNode.removeChild(element.parentNode);
 
-  LIST[element.id].trash = true;
+  LIST[element.id - 1].trash = true;
 }
 
 list.addEventListener('click', (event) => {
