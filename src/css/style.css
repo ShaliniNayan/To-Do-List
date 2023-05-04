@@ -19,6 +19,7 @@ body {
   border-radius: 15px 15px 0 0;
   position: relative;
 }
+
 .clear {
   width: 30px;
   height: 30px;
@@ -26,10 +27,18 @@ body {
   right: 20px;
   top: 20px;
 }
+
 .clear i {
   font-size: 30px;
   color: #fff;
 }
+
+.add-to-do i {
+  position: absolute;
+  font-size: 40px;
+  color: #4162f6;
+}
+
 .clear i:hover {
   cursor: pointer;
   text-shadow: 1px 3px 5px #000;
@@ -44,13 +53,16 @@ body {
   background-color: #fff;
   overflow: auto;
 }
+
 .content::-webkit-scrollbar {
   display: none;
 }
+
 .content ul {
   padding: 0;
   margin: 0;
 }
+
 .item {
   width: 380px;
   height: 45px;
@@ -61,6 +73,7 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .item i.co {
   position: absolute;
   font-size: 25px;
@@ -68,12 +81,15 @@ body {
   left: 15px;
   top: 10px;
 }
+
 .item i.co:hover {
   cursor: pointer;
 }
+
 .fa-check-circle {
   color: #6eb200;
 }
+
 .item p.text {
   position: absolute;
   padding: 0;
@@ -84,20 +100,24 @@ body {
   background-color: #fff;
   max-width: 285px;
 }
+
 .lineThrough {
   text-decoration: line-through;
   color: #ccc;
 }
+
 .item i.de {
   position: absolute;
   font-size: 25px;
   right: 15px;
   top: 10px;
 }
+
 .item i.de:hover {
   color: #af0000;
   cursor: pointer;
 }
+
 /* ------------ add item ------------ */
 .add-to-do {
   position: relative;
@@ -106,11 +126,6 @@ body {
   background-color: #fff;
   padding: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-.add-to-do i {
-  position: absolute;
-  font-size: 40px;
-  color: #4162f6;
 }
 
 .add-to-do input {
@@ -128,7 +143,7 @@ body {
   position: relative;
   width: 380px;
   height: 40px;
-  background-color: #eeeeee;
+  background-color: #eee;
   padding: 10px;
   border-top: 1px solid rgba(0, 0, 0.1);
   font-family: "Titillium Web", sans-serif;
