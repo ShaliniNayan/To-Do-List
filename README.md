@@ -45,7 +45,7 @@
 
 LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
+## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://shalininayan.github.io/To-Do-List/dist/)
 
