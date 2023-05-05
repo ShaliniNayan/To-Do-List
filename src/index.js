@@ -2,7 +2,7 @@ import './style.css';
 import { todos } from './modules/todos.js';
 import storageAvailable from './modules/storageAvailable.js';
 import { clearBtn, todoInput } from './modules/htmlElements.js';
-import completeToDo from './modules/completedCheck.js';
+// import completeToDo from './modules/completedCheck.js';
 
 if (storageAvailable('localStorage')) {
   todos.checkStorage();
