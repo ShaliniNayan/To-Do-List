@@ -5,7 +5,7 @@ const storageAvailable = (type) => {
   try {
     storage = window[type];
     storage.setItem(x, x);
-    // storage.removeItem(x);
+    storage.removeItem(x);
     return true;
   } catch (e) {
     return e instanceof DOMException && (
