@@ -1,3 +1,4 @@
 const todoList = document.getElementById('todo-list');
+const todoInput = document.getElementById('todo-input');
 
-export default todoList;
+export { todoList, todoInput };

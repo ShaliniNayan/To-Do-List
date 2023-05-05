@@ -67,7 +67,7 @@ h1 {
   border: 5px solid gray;
 }
 
-.options-button {
+.remove-button {
   background: white;
   color: gray;
   border: none;
@@ -75,11 +75,15 @@ h1 {
   padding: 0;
 }
 
-.options-button:hover {
+.remove-button:hover {
   color: #c2c1c1;
 }
 
-.options {
+.remove-button:active {
+  color: red;
+}
+
+.delete {
   font-size: 20px;
 }
 
