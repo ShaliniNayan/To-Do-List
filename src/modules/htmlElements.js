@@ -1,5 +1,4 @@
 const todoList = document.getElementById('todo-list');
-const todoInput = document.getElementById('input');
-const clearBtn = document.getElementById('clear-btn');
+const todoInput = document.getElementById('todo-input');
 
-export { todoList, todoInput, clearBtn };
+export { todoList, todoInput };
