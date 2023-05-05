@@ -9,7 +9,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Key Features](#key-features)
-    <!-- - [🚀 Live Demo](#live-demo) -->
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -37,17 +37,17 @@
 - Webpack
 
 ### Key Features <a name="key-features"></a>
+
 - Webpack
 - JavaScript Arrays
 - HTML & CSS
 - DOM Manupulation
 
+LIVE DEMO -->
 
-<!-- LIVE DEMO -->
+## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://shalininayan.github.io/To-Do-List/) -->
+- [Live Demo Link](https://shalininayan.github.io/To-Do-List/dist/)
 
 <!-- GETTING STARTED -->
 

@@ -1,13 +1,15 @@
 import './style.css';
-import todos from './modules/todos.js';
+import { todos } from './modules/todos.js';
 import storageAvailable from './modules/storageAvailable.js';
-import { todoInput } from './modules/htmlElements.js';
+import { clearBtn, todoInput } from './modules/htmlElements.js';
+import completeToDo from './modules/completedCheck.js';
 
 if (storageAvailable('localStorage')) {
   todos.checkStorage();
 
   todos.showTodos();
 
+  // Remove a To-Do
   for (let i = 0; i < todos.todos.length; i += 1) {
     const removeButtons = document.querySelectorAll('.remove-button');
     removeButtons[i].addEventListener('click', () => {
@@ -15,18 +17,10 @@ if (storageAvailable('localStorage')) {
     });
   }
 
-  for (let i = 0; i < todos.todos.length; i += 1) {
-    const checkboxes = document.querySelectorAll('.checkbox');
-    checkboxes[i].addEventListener('change', (e) => {
-      if (e.target.checked) {
-        todos.complete(i, true);
-      } else {
-        todos.complete(i, false);
-      }
-      todos.save();
-    });
-  }
+  // Mark a To-Do as completed
+  completeToDo(todos);
 
+  // Edit a To-Do
   for (let i = 0; i < todos.todos.length; i += 1) {
     const todoTexts = document.querySelectorAll('.todo-text');
     todoTexts[i].addEventListener('keydown', (event) => {
@@ -36,10 +30,10 @@ if (storageAvailable('localStorage')) {
     });
     todoTexts[i].addEventListener('input', () => {
       todos.edit(i, todoTexts[i].innerHTML);
-      todos.save();
     });
   }
 
+  // Add a To-Do
   todoInput.addEventListener('keyup', (event) => {
     if (todoInput.value !== '') {
       if (event.keyCode === 13) {
@@ -48,10 +42,13 @@ if (storageAvailable('localStorage')) {
           isComplete: false,
           index: todos.todos.length + 1,
         });
-        todos.save();
         todoInput.value = '';
-        window.location.reload();
       }
     }
+  });
+
+  // Clean completed To-Dos
+  clearBtn.addEventListener('click', () => {
+    todos.clearCompleted();
   });
 }

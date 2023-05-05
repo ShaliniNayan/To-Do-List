@@ -23,7 +23,7 @@ h1 {
   font-size: 20px;
 }
 
-.refresh-icon {
+.refresh-icon-button {
   background: white;
   color: gray;
   border: none;
@@ -32,7 +32,7 @@ h1 {
   font-size: 17px;
 }
 
-.refresh-icon:hover {
+.refresh-icon-button:hover {
   color: #c2c1c1;
 }
 
