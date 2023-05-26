@@ -11,9 +11,9 @@ module.exports = {
   devServer: {
     static: './dist',
   },
-  // optimization: {
-  //   runtimeChunk: 'single',
-  // },
+  optimization: {
+    runtimeChunk: 'single',
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
